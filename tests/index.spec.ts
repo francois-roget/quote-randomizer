@@ -30,6 +30,7 @@ describe('Random Quotes from author', () => {
 		assert.isNotNull(quote);
 		assert.isString(quote?.text, 'Quote should have a text');
 		assert.isString(quote?.author, 'Quote should have an author');
+		assert.equal(quote?.author, 'Unknown');
 	});
 
 	it('should return null for non-present author', () => {
